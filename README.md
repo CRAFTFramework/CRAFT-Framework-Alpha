@@ -140,3 +140,14 @@ CRAFT Framework is open for experimentation and community use. Formal licensing 
 ### 🏷️ Tags
 
 `ai-framework` `object-oriented-programming` `prompt-engineering` `ai-communication` `token-optimization` `craft` `oop` `artificial-intelligence`
+
+
+## 📄 License
+
+CRAFT Alpha is licensed under the **Business Source License (BSL) 1.1**.  
+- ✅ Free for non-commercial, educational, and experimental use.  
+- ❌ Commercial use requires a separate license from Ketelsen Digital Solutions LLC.  
+- 🔄 On 2029-01-01, this project will automatically convert to the Apache License 2.0.  
+
+For commercial licensing inquiries, please visit [Ketelsen.ai](https://ketelsen.ai) or contact: support@ketelsen.ai
+
