@@ -1,0 +1,330 @@
+# [MASTER-TEMPLATE]
+# ================================================
+# CRAFT PROJECT FILE
+# Filename: CFT-PROJ-CP-***_[PROJECT-NAME]-v*.txt
+# Version: v*
+# Last Updated: [DATE]
+# CFT-PROJ-CP-***
+# CRAFT™️ is an acronym for Configurable Reusable AI Framework Technology. CRAFT™️ is an on-going weekly experiment where I will be working together with the world's most advanced commercially available A.I.s to develop a new way to communicate with A.I. while adapting the principles of Object Oriented Programming to AI Chats. The goal is deeper, more intuitive and more meaningful interactions with A.I. chat tools.
+# =======================================
+
+# =========================================================
+# Licensed under the Business Source License 1.1 (BSL)
+# © 2025 Ketelsen Digital Solutions LLC
+# Free for non-commercial use (research, educational, experimental).
+# Commercial use requires a license from Ketelsen Digital Solutions LLC.
+# On or after 2029-01-01, this file will be licensed under Apache 2.0.
+# ================================================
+
+#AI->AI::Instruction: (Replace all *** with three-digit project number, e.g., 025, 001, 099)
+#AI->AI::Instruction: (Replace [PROJECT-NAME] with UPPERCASE-HYPHENATED name, e.g., CRAFT-ALPHA-PH5)
+#AI->AI::Instruction: (Replace v* with format vMMDDaX, e.g., v0809a1)
+#AI->AI::Instruction: (Replace [DATE] with MM-DD-YYYY format, e.g., 08-09-2025)
+
+# ================================================
+"""
+Every CRAFT project consists of four interconnected Python-compatible text files that work together to create a complete framework implementation:
+   1. PROJECT IMPLEMENTATION FILE Filename pattern: CFT-PROJ-[project_number]_[project_name]-v[version].txt Purpose: Contains the active project-specific implementation of the CRAFT framework, including all defined variables, functions, objects, and structured chat instructions relevant to the current project.
+   2. CONVERSATION CONTINUITY FILE Filename pattern: CFT-PROJ-[project_number]_AI-CHAT-HISTORY-v[version].txt Purpose: Facilitates session-to-session continuity through a structured "Handoff" system, enabling each AI chat session to seamlessly pass context to subsequent interactions.
+   3. FRAMEWORK SPECIFICATION FILE Filename pattern: CFT-FWK-SPEC-v[version].txt Purpose: Defines the current specification for the CRAFT (Configurable Reusable AI Framework Technology) framework, providing the foundational rules and structures that govern all CRAFT implementations.
+   4. BASIC FRAMEWORK COOKBOOK: CFT-FWK-COOKBK-v[version].txt Purpose: Defines a base set of Recipes that are useful to the basic function CRAFT Framework.
+These files form a cohesive system that maintains project integrity across multiple AI interactions while ensuring consistent application of CRAFT principles. 
+"""
+# ================================================
+
+# ================================================
+"""
+This file contains the active project-specific implementation of the CRAFT
+framework. It includes all defined variables, functions, objects, and structured 
+chat instructions for the current project. This is the "working code" file that 
+should be loaded at the beginning of each chat session.
+
+This file replaces ad-hoc project descriptions with a standardized format that
+includes:
+
+1. PROJECT_META - Essential project identification and version tracking
+2. PROJECT_INSTRUCTIONS - Global configuration and execution rules
+3. PROJECT_VARIABLES - All constants and configuration values
+4. PROJECT_FUNCTIONS - Reusable operation definitions  
+5. PROJECT_OBJECTS - Class definitions and object templates
+
+When making changes to the CRAFT implementation, always update this file
+and increment the version number accordingly. 
+
+This file should be shared with AI assistants at the beginning of each new chat
+session along with the CRAFT specifications file.
+"""
+# ================================================
+
+# ================================================
+# VARIABLE PERSISTENCE DOCUMENTATION
+# ================================================
+"""
+IMPORTANT: This file serves as persistent storage for your CRAFT project!
+
+The PROJECT_VARIABLES section (Section 3) below contains all values that 
+persist across AI chat sessions. When you start a new chat and load this 
+file, all variables defined in PROJECT_VARIABLES are immediately available.
+
+HOW TO USE PERSISTENCE:
+----------------------
+1. Define any value you want to persist in PROJECT_VARIABLES section
+2. Use Python-compatible syntax (variables, lists, dicts, etc.)
+3. Add metadata comments for tracking: # Added: YYYY-MM-DD
+4. Load this file at the start of each new chat session
+5. All variables will be available throughout the session
+
+WHAT PERSISTS:
+-------------
+✓ Any variable defined in PROJECT_VARIABLES section
+✓ Simple values (strings, numbers, booleans)
+✓ Complex structures (nested dicts, lists)
+✓ Multi-modal variables (different representations)
+✓ Configuration settings
+
+WHAT DOESN'T PERSIST:
+--------------------
+❌ Function definitions (use Framework Spec file)
+❌ Computed values that change (like current_time)
+❌ Class definitions (use Framework Spec file)
+❌ Temporary session variables
+❌ Variables defined outside PROJECT_VARIABLES section
+
+EXAMPLE:
+-------
+If you define in PROJECT_VARIABLES:
+    PROJECT_NAME = "My CRAFT Project"
+    
+Then in ANY future chat session that loads this file:
+    print(PROJECT_NAME)  # Output: "My CRAFT Project"
+    
+The value persists until you manually edit this file.
+"""
+# ================================================
+
+# =========================================================
+# 1. PROJECT_META
+# =========================================================
+"""
+Essential project identification and version tracking information.
+This section defines the core identity of your CRAFT project.
+"""
+
+#AI->AI::Instruction: (Gather project number, name, version, goals from user)
+PROJECT_ID = "CFT-PROJ-CP-***"  # [PLACEHOLDER]
+PROJECT_NAME = "[PLACEHOLDER]"  # [PLACEHOLDER] - Use UPPERCASE-HYPHENATED format
+VERSION = "v*"  # [PLACEHOLDER] - Format: vMMDDaX
+LAST_UPDATED = "[DATE]"  # [PLACEHOLDER] - Format: MM-DD-YYYY
+PROJECT_PHASE = "[PLACEHOLDER]"  # e.g., "Alpha Phase 5", "Production", "Testing"
+#AI->AI::Instruction: (PROJECT_PHASE examples: "Development", "Testing", "Alpha Phase X", "Beta", "Production")
+
+# Project Goals and Objectives
+#AI->AI::Instruction: (Ask user about main purpose, success metrics, target audience)
+PROJECT_GOALS = """
+[PLACEHOLDER - Main project purpose and objectives]
+"""
+
+PROJECT_SUCCESS_METRICS = [
+    "[PLACEHOLDER - Measurable outcome 1]",
+    "[PLACEHOLDER - Measurable outcome 2]",
+    "[PLACEHOLDER - Measurable outcome 3]"
+]
+#AI->AI::Instruction: (Recommend 3-5 specific, measurable success metrics)
+
+# =========================================================
+# 2. PROJECT_INSTRUCTIONS
+# =========================================================
+"""
+Global configuration rules that govern how the AI assistant should
+behave and operate when working on this project. These are project-wide
+instructions that apply to all interactions.
+"""
+
+# Comment System Configuration
+#AI->AI::Instruction: (These are universal - keep as-is)
+COMMENT_SYSTEM = {
+    "H->AI": "Human to AI directives",
+    "AI->H": "AI to Human responses with type indicators",
+    "types": ["Status", "Note", "Question", "RequiredQuestion", "Warning", "Error", "COM"]
+}
+
+# CRAFT-OPERATIONS-MANAGER Configuration
+#AI->AI::Instruction: (Ask if user wants COM enabled - default True)
+COM_ENABLED = True  # [KEEP-AS-IS]
+COM_AUTO_EXECUTE = True  # [KEEP-AS-IS]
+COM_SUGGEST_RECIPES = True  # [KEEP-AS-IS]
+COM_MONITOR_TOKENS = True  # [KEEP-AS-IS]
+
+# Token Management
+TOKEN_WARNING_THRESHOLD = 0.70  # Warn at 70% token usage [KEEP-AS-IS]
+TOKEN_CRITICAL_THRESHOLD = 0.85  # Critical at 85% token usage [KEEP-AS-IS]
+AUTO_HANDOFF_AT_THRESHOLD = 0.90  # Auto-suggest handoff at 90% [KEEP-AS-IS]
+
+# Recipe Execution Preferences
+#AI->AI::Instruction: (These control recipe behavior - usually keep as-is)
+RECIPE_SETTINGS = {
+    "auto_execute_category": ["CAT-001"],  # Auto-execute core recipes [KEEP-AS-IS]
+    "require_confirmation": ["CAT-002", "CAT-003", "CAT-004"],  # Ask first [KEEP-AS-IS]
+    "verbose_output": False,  # Detailed recipe execution logs [KEEP-AS-IS]
+    "track_usage": True  # Track which recipes are used most [KEEP-AS-IS]
+}
+
+# =========================================================
+# 3. PROJECT_VARIABLES
+# =========================================================
+"""
+All project-specific constants, configuration values, and data that
+should persist across chat sessions. This is your project's "memory".
+"""
+
+#AI->AI::Instruction: (Create project-specific variables based on user's needs)
+#AI->AI::Instruction: (Examples below - replace with actual project data)
+
+# Project-Specific Configuration
+[PLACEHOLDER - Add project-specific variables here]
+
+# Example structure (delete or modify as needed):
+# API_ENDPOINTS = {
+#     "production": "https://api.example.com",
+#     "staging": "https://staging.api.example.com"
+# }
+# 
+# DATABASE_TABLES = [
+#     "users",
+#     "projects",
+#     "sessions"
+# ]
+# 
+# FEATURE_FLAGS = {
+#     "new_ui": False,
+#     "beta_features": True,
+#     "debug_mode": False
+# }
+
+# =========================================================
+# 4. PROJECT_FUNCTIONS
+# =========================================================
+"""
+Reusable operation definitions specific to this project.
+These are project-specific functions that don't belong in recipes.
+"""
+
+#AI->AI::Instruction: (Leave as placeholder unless user has specific functions)
+# [PLACEHOLDER - Project-specific functions will be added here as needed]
+
+# Example function structure (delete or modify as needed):
+# def validate_project_data(data):
+#     '''Validates project-specific data format'''
+#     # Implementation here
+#     pass
+# 
+# def generate_report(format="markdown"):
+#     '''Generates project status report'''
+#     # Implementation here
+#     pass
+
+# =========================================================
+# 5. PROJECT_OBJECTS
+# =========================================================
+"""
+Class definitions and object templates specific to this project.
+These represent complex entities or data structures unique to your project.
+"""
+
+#AI->AI::Instruction: (Leave as placeholder unless user has specific objects)
+# [PLACEHOLDER - Project-specific objects will be added here as needed]
+
+# Example object structure (delete or modify as needed):
+# class ProjectTask:
+#     def __init__(self, title, priority="medium"):
+#         self.title = title
+#         self.priority = priority
+#         self.status = "pending"
+#         self.created = "timestamp_here"  # Replace with actual timestamp logic
+
+# =========================================================
+# 6. COOKBOOK CONFIGURATION
+# =========================================================
+"""
+Configuration for which recipe cookbooks are active in this project.
+"""
+
+#AI->AI::Instruction: (Keep default cookbook configuration)
+COOKBOOK_CONFIG = {
+    "core_cookbook": {
+        "filename": "CFT-FWK-COOKBK-CORE-v*.txt",
+        "enabled": True,  # [KEEP-AS-IS]
+        "description": "Core CRAFT framework recipes",
+        "category": "CAT-001"
+    },
+    "active_cookbooks": [
+        # Additional cookbooks can be added here
+    ],
+    "loading_strategy": "selective",  # Options: "all", "selective", "lazy" [KEEP-AS-IS]
+    "version_check": True,  # [KEEP-AS-IS]
+    "fallback_to_core": True  # [KEEP-AS-IS]
+}
+
+# Recipe Category Mapping
+RECIPE_CATEGORIES = {
+    "CAT-001": "Core Framework Operations",
+    "CAT-002": "Content and Promotional",
+    "CAT-003": "Business Documentation",
+    "CAT-004": "Security and Compliance"
+}
+
+# =========================================================
+# 7. PERSONA CONFIGURATION
+# =========================================================
+"""
+Default persona and available personas for this project.
+"""
+
+#AI->AI::Instruction: (Ask if user wants custom persona or keep default)
+DEFAULT_PERSONA = "The Professional Assistant"  # [KEEP-AS-IS or CUSTOMIZE]
+
+AVAILABLE_PERSONAS = [
+    "The Professional Assistant",
+    "The Empathetic Counselor",
+    "The Creative Maverick",
+    "The Technical Expert",
+    "The Academic Scholar",
+    "The Strategic Advisor"
+]
+
+# =========================================================
+# 8. ABOUT_ME (Optional)
+# =========================================================
+"""
+Optional section for user context that helps AI provide more
+personalized and relevant assistance.
+"""
+
+#AI->AI::Instruction: (Only include if user wants personalization)
+#AI->AI::Instruction: (Ask: name, role, location, timezone, expertise, CRAFT experience)
+
+# Uncomment and fill if desired:
+# ABOUT_ME = {
+#     "name": "[Your Name]",
+#     "role": "[Your Role/Title]",
+#     "location": "[City, Country]",
+#     "timezone": "[Your Timezone]",
+#     "expertise": ["Area 1", "Area 2", "Area 3"],
+#     "craft_experience": "Beginner/Intermediate/Advanced",
+#     "communication_preferences": {
+#         "formality": "casual/professional",
+#         "detail_level": "concise/detailed",
+#         "examples": "minimal/frequent"
+#     }
+# }
+
+# =========================================================
+# END OF PROJECT IMPLEMENTATION FILE
+# =========================================================
+
+#AI->AI::Instruction: (After gathering all information from user:)
+#AI->AI::Instruction: (1. Replace all [PLACEHOLDER] with actual values)
+#AI->AI::Instruction: (2. Remove any unused optional sections)
+#AI->AI::Instruction: (3. Ensure consistency across all sections)
+#AI->AI::Instruction: (4. Output complete file for user to save)
+
