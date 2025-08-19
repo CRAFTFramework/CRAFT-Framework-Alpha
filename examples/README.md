@@ -17,7 +17,11 @@ These examples will serve **three** purposes:
 2) **Template projects** you can copy/rename to bootstrap your own work.  
 3) **Showcase & recipes** that demonstrate common tasks and patterns.
 
-> CRAFT projects always use the same four files working together. See the docs links below if you’re new to this. (CFT-FWK-SPEC-v0.0825g6.txt, 2025; CFT-FWK-COOKBK-CORE-v0825c5.txt, 2025.) :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
+> CRAFT projects always use the same four files working together. See the docs links below if you’re new to this.
+   - Project implementation: `CFT-PROJ-CP-***_[PROJECT-NAME]-v*.txt`
+   - Chat continuity: `CFT-PROJ-CP-***_AI-CHAT-HISTORY-v*.txt`
+   - Framework spec: `CFT-FWK-SPEC-v*.txt`
+   - Core cookbook: `CFT-FWK-COOKBK-CORE-v*.txt`
 
 ---
 
