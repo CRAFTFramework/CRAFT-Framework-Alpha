@@ -1,0 +1,195 @@
+# [MASTER-TEMPLATE]
+# =======================================
+# CRAFT PROJECT CHAT HISTORY
+# File: CFT-PROJ-CP-***_AI-CHAT-HISTORY-v*.txt
+# Version: v*
+# Last Updated: [DATE]
+# CFT-PROJ-CP-***
+#AI->AI::Instruction: (Replace [DATE] with current date in MM-DD-YYYY format, e.g., 08-09-2025)
+# CRAFT™️ is an acronym for Configurable Reusable AI Framework Technology. CRAFT™️ is an on-going weekly experiment where I will be working together with the world's most advanced commercially available A.I.s to develop a new way to communicate with A.I. while adapting the principles of Object Oriented Programming to AI Chats. The goal is deeper, more intuitive and more meaningful interactions with A.I. chat tools.
+# =======================================
+
+# =========================================================
+# Licensed under the Business Source License 1.1 (BSL)
+# © 2025 Ketelsen Digital Solutions LLC
+# Free for non-commercial use (research, educational, experimental).
+# Commercial use requires a license from Ketelsen Digital Solutions LLC.
+# On or after 2029-01-01, this file will be licensed under Apache 2.0.
+# =======================================
+
+#AI->AI::Instruction: (Replace all *** with three-digit project number throughout file, e.g., 025, 001, 099)
+#AI->AI::Instruction: (Replace version * with format v[MMDD][a-z][1-9] e.g., v0101a1)
+#AI->AI::Instruction: (Replace [DATE] with current date in MM-DD-YYYY format)
+
+# ================================================
+"""
+Every CRAFT project consists of four interconnected Python-compatible text files that work together to create a complete framework implementation:
+   1. PROJECT IMPLEMENTATION FILE Filename pattern: CFT-PROJ-[project_number]_[project_name]-v[version].txt Purpose: Contains the active project-specific implementation of the CRAFT framework, including all defined variables, functions, objects, and structured chat instructions relevant to the current project.
+   2. CONVERSATION CONTINUITY FILE Filename pattern: CFT-PROJ-[project_number]_AI-CHAT-HISTORY-v[version].txt Purpose: Facilitates session-to-session continuity through a structured "Handoff" system, enabling each AI chat session to seamlessly pass context to subsequent interactions.
+   3. FRAMEWORK SPECIFICATION FILE Filename pattern: CFT-FWK-SPEC-v[version].txt Purpose: Defines the current specification for the CRAFT (Configurable Reusable AI Framework Technology) framework, providing the foundational rules and structures that govern all CRAFT implementations.
+   4. BASIC FRAMEWORK COOKBOOK: CFT-FWK-COOKBK-v[version].txt Purpose: Defines a base set of Recipes that are useful to the basic function CRAFT Framework.
+These files form a cohesive system that maintains project integrity across multiple AI interactions while ensuring consistent application of CRAFT principles. 
+"""
+# ================================================
+
+
+# =========================================================
+# HANDOFF-INSTRUCTIONS - Session-to-session Continuity
+# =========================================================
+
+"""
+This file facilitates session-to-session continuity through a structured
+"Handoff" system where each AI chat session passes project context to the next.
+
+Each chat session begins by reviewing the most recent HANDOFF_SNAPSHOT
+and ends by creating a new one with the naming format [name of the file without version] + "H" + [001-999] (for example CFT-PROJ-0001_AI-CHAT-HISTORY-H001). 
+This creates a seamless workflow where each AI assistant can effectively continue where the previous session left off, despite the stateless nature of AI chat interactions.
+
+# HANDOFF_ORGANIZATION_NOTES:
+# =========================
+
+IMPORTANT: Handoff snapshots are organized in REVERSE CHRONOLOGICAL ORDER with the 
+most recent handoff listed FIRST. This ensures the latest context is immediately 
+visible when opening the file.
+
+PLACEHOLDER SYSTEM:
+- Empty handoff sections contain "Tbd" (To be determined) as placeholders
+- These are INTENTIONAL placeholders, not errors or missing content
+- Each "Tbd" will be replaced with actual handoff content when that session concludes
+- New handoffs are added at the TOP of the handoff list, pushing older ones down
+
+WORKFLOW:
+1. At session start: AI reads the most recent (topmost) completed handoff
+2. During session: Work proceeds based on handoff context
+3. At session end: Create new handoff snapshot
+4. File update: Add new handoff at the TOP, increment highest handoff number
+
+Example progression:
+- Initial file has: H001 (Tbd), H002 (Tbd), H003 (Tbd)
+- After first session: H001 (completed), H002 (Tbd), H003 (Tbd)
+- After second session: H002 (completed), H001 (completed), H003 (Tbd)
+- When H003 is needed: Add H004 (Tbd) placeholder at the top
+
+# REVERSE CHRONOLOGICAL ORDER - LATEST, MOST UP-TO-DATE HANDOFF IS LISTED FIRST
+"""
+
+
+# =========================================================
+# PERSISTENCE vs HANDOFF CLARIFICATION
+# =========================================================
+"""
+UNDERSTANDING THE DIFFERENCE:
+
+PROJECT_VARIABLES (in Project File) = LONG-TERM PERSISTENCE
+- Stores: Project constants, configuration, team data
+- Duration: Weeks, months, or years
+- Update frequency: Rarely (manual edits only)
+- Example: PROJECT_NAME, TEAM_MEMBERS, CONFIG_SETTINGS
+
+HANDOFF_SNAPSHOT (in this file) = SHORT-TERM CONTEXT
+- Stores: Current work state, recent decisions, next steps
+- Duration: Hours or days (between work sessions)
+- Update frequency: Every chat session
+- Example: "Just completed step 3 of testing", "Bug found in function X"
+
+RULE OF THUMB:
+- If it defines WHAT your project IS → PROJECT_VARIABLES
+- If it describes WHERE you ARE in the work → HANDOFF_SNAPSHOT
+"""
+
+
+# HANDOFF_SNAPSHOT_RECIPE:
+# ===================
+
+#H->AI::Directive: (The Handoff Snapshot Recipe has been moved to the Framework Cookbook)
+#H->AI::Context: (This recipe is now part of the base recipes available in every CRAFT session)
+
+"""
+RECIPE LOCATION: CFT-FWK-COOKBK-v[version].txt
+RECIPE ID: RCP-001-004-002-HANDOFF_SNAPSHOT-v1.00a
+
+To execute the handoff recipe:
+1. The recipe is automatically available in the Framework Cookbook
+2. Execute using: HANDOFF_SNAPSHOT_RECIPE.execute({parameters})
+3. Or reference directly: See RCP-001-004-002-HANDOFF_SNAPSHOT in the cookbook
+
+The Interactive Session Handoff Creator ensures smooth transitions between
+chat sessions with human confirmation for next steps and unresolved questions.
+"""
+
+#H->AI::Note: (See Framework Cookbook Section: Base Recipes for full recipe details)
+
+
+# REVERSE CHRONOLOGICAL ORDER - LATEST, MOST UP-TO-DATE HANDOFF IS LISTED FIRST
+
+
+# =========================================================
+# START HANDOFF H003 - Tbd
+# =========================================================
+
+#AI->AI::Instruction: (H003 is placeholder for future use - will be most recent when used)
+
+Tbd
+
+# =========================================================
+# END HANDOFF H003
+# =========================================================
+
+
+# =========================================================
+# START HANDOFF H002 - Tbd
+# =========================================================
+
+#AI->AI::Instruction: (H002 is placeholder for second session)
+#AI->AI::Instruction: (Keep as minimal "Tbd" - full structure added when used)
+
+Tbd
+
+# =========================================================
+# END HANDOFF H002
+# =========================================================
+
+
+# =========================================================
+# START HANDOFF H001 - [PROJECT NAME]
+# =========================================================
+
+#AI->AI::Instruction: (Keep H001 placeholder structure intact - this will be first completed handoff)
+#AI->AI::Instruction: (H001 will be oldest handoff after H002 and H003 are used)
+
+HANDOFF H001
+Session Type: Tbd
+Project: CFT-PROJ-CP-*** ([PROJECT NAME])
+#AI->AI::Instruction: (Replace [PROJECT NAME] with actual project name from discovery)
+
+SESSION SUMMARY
+Tbd
+
+FILES TOUCHED
+Tbd
+
+KEY DECISIONS & RATIONALE
+Tbd
+
+NEXT STEPS
+Tbd
+
+OPEN QUESTIONS
+Tbd
+
+RISKS/BLOCKERS
+Tbd
+
+CONSISTENCY CHECK
+Tbd
+
+HANDOFF INSTRUCTIONS
+Tbd
+
+#AI->H::COM::Status: (Handoff H001 placeholder - Will be completed at first session end)
+#AI->H::TokenTracking: (Session usage: 0%)
+
+# =========================================================
+# END HANDOFF H001
+# =========================================================
+
