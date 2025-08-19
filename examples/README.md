@@ -54,3 +54,66 @@ The current runtime is **LLM chat**. Pick your model (ChatGPT / GPT-5 Pro / Clau
 
 This index lists the categories you’ll see here. We’ve included a `README.md` in each folder so the directories remain visible while examples are being authored.
 
+examples/
+├─ basic/ # “Hello, CRAFT” quick starts – smallest possible runnable samples
+├─ templates/ # Copy-ready project skeletons aligned to the master templates
+├─ workflows/ # Multi-step, realistic flows (e.g., draft→review→handoff)
+├─ advanced/ # Deeper patterns, larger or specialized scenarios
+└─ integrations/ # Optional integrations and ecosystem examples
+
+
+- **basic/** → `examples/basic/README.md` (placeholder)  
+- **templates/** → `examples/templates/README.md` (placeholder)  
+- **workflows/** → `examples/workflows/README.md` (placeholder)  
+- **advanced/** → `examples/advanced/README.md` (placeholder)  
+- **integrations/** → `examples/integrations/README.md` (placeholder)
+
+---
+
+## Use any example as a template
+
+You can turn any example into your own project by following these steps (consistent with the **MASTER templates**):
+
+1. **Copy** the example folder into a new location.  
+2. **Rename** files to the standard pattern:
+   - `CFT-PROJ-CP-***_[PROJECT-NAME]-v*.txt`
+   - `CFT-PROJ-CP-***_AI-CHAT-HISTORY-v*.txt`
+3. In each file, **replace placeholders**:
+   - `***` → your three-digit project number (e.g., `032`)  
+   - `[PROJECT-NAME]` → UPPERCASE-HYPHENATED name (e.g., `MY-FIRST-CRAFT`)  
+   - `v*` → version format `vMMDDaX` (e.g., `v0819a1`)  
+4. Update the **date** and **version** headers.  
+5. Load the four files into a new chat and begin.
+
+> See the master templates for the exact placeholder rules. (MASTER templates) :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+
+---
+
+## What’s here now (and what’s coming)
+
+- ✅ Folder scaffolding with `README.md` placeholders in **basic/**, **templates/**, **workflows/**, **advanced/**, **integrations/**.  
+- 🚧 Initial runnable examples are being curated; watch this space for the first “Hello, CRAFT” quick start and a copy-ready template.
+
+---
+
+## License & usage
+
+All examples in this folder are covered by the repository’s **Business Source License 1.1 (BSL)**:
+
+- **Non-commercial** use (research, education, experimentation, personal) is permitted.  
+- **Commercial** use requires a separate license from Ketelsen Digital Solutions LLC.  
+- On the **Change Date** (**2029-01-01** for this release), the examples will be available under **Apache 2.0**.  
+- See the full text in the repo root: `../LICENSE`. (Business Source License 1.1 parameters are included with the four CRAFT files.) :contentReference[oaicite:5]{index=5}
+
+---
+
+## Community & conduct
+
+This repository follows an **org-wide Code of Conduct**. Please read and abide by it when proposing or discussing examples: `../CODE_OF_CONDUCT.md`.
+
+---
+
+## Handy references
+
+- Four-file model & rules: Framework Spec and Core Cookbook. :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}  
+- Repo structure and GitHub strategy for CRAFT: Project file for CP-032. :contentReference[oaicite:8]{index=8}
