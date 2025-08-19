@@ -55,18 +55,11 @@ The current runtime is **LLM chat**. Pick your model (ChatGPT / GPT-5 Pro / Clau
 This index lists the categories you’ll see here. We’ve included a `README.md` in each folder so the directories remain visible while examples are being authored.
 
 examples/
-├─ basic/ # “Hello, CRAFT” quick starts – smallest possible runnable samples
-├─ templates/ # Copy-ready project skeletons aligned to the master templates
-├─ workflows/ # Multi-step, realistic flows (e.g., draft→review→handoff)
-├─ advanced/ # Deeper patterns, larger or specialized scenarios
-└─ integrations/ # Optional integrations and ecosystem examples
-
-
-- **basic/** → `examples/basic/README.md` (placeholder)  
-- **templates/** → `examples/templates/README.md` (placeholder)  
-- **workflows/** → `examples/workflows/README.md` (placeholder)  
-- **advanced/** → `examples/advanced/README.md` (placeholder)  
-- **integrations/** → `examples/integrations/README.md` (placeholder)
+- **basic/** → `examples/basic/README.md` (placeholder)  # “Hello, CRAFT” quick starts – smallest possible runnable samples
+- **templates/** → `examples/templates/README.md` (placeholder)  # Copy-ready project skeletons aligned to the master templates
+- **workflows/** → `examples/workflows/README.md` (placeholder)  # Multi-step, realistic flows (e.g., draft→review→handoff)
+- **advanced/** → `examples/advanced/README.md` (placeholder)  # Deeper patterns, larger or specialized scenarios
+- **integrations/** → `examples/integrations/README.md` (placeholder) # Optional integrations and ecosystem examples
 
 ---
 
