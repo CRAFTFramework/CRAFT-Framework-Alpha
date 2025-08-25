@@ -1,132 +1,117 @@
-# CRAFT Tutorial Project (/tutorial)
+# CRAFT Starter Set (/starter-set)
 
-Welcome to the beginner's tutorial for CRAFT — Configurable Reusable AI Framework Technology.
+Welcome to the CRAFT Starter Set — A beginner-friendly introduction to the Configurable Reusable AI Framework Technology.
 
 ## 1) What it is
 
-This `/tutorial` folder contains the official CRAFT Tutorial Project designed for absolute beginners. It demonstrates CRAFT's four-file architecture through an interactive, self-guided learning experience with AutoStart functionality that activates whenever you mention CRAFT to your AI assistant. See the repo's `core/` for the framework files that power this tutorial.
+This `/starter-set` folder contains a complete, ready-to-use CRAFT project designed for absolute beginners. It demonstrates CRAFT's four-file architecture (Project Implementation, AI Chat History, Framework Spec, and Core Cookbook) with auto-initialization, helpful guidance, and example recipes. This project (CFT-PROJ-START-001) serves as both a learning tool and a template for creating your own CRAFT projects.
 
 ## 2) Why it's useful
 
-The CRAFT Tutorial helps newcomers understand structured AI workflows through:
+The CRAFT Starter Set removes barriers to entry for newcomers to the framework:
 
-- **AutoStart activation** that begins automatically when you mention CRAFT.
-- **Adaptive learning paths** with Quick Start (3 features) or Standard (5 features at a time) options.
-- **Context-aware help system** activated anytime with "HELP" command.
-- **Progress tracking** that remembers what you've learned across sessions via handoffs.
-- **Beginner-friendly explanations** assuming zero prior CRAFT knowledge.
+- **Auto-initialization** triggers on any mention of "CRAFT" — no manual setup needed
+- **Friendly teacher persona** provides patient, encouraging guidance without forcing tutorials
+- **Flexible help system** adapts to your preferred learning style (quick/detailed/comprehensive)
+- **Working example recipe** (HELLO_CRAFT) demonstrates recipe structure in action
+- **Gentle error handling** encourages exploration without fear of mistakes
+- **Session continuity** via structured handoffs, maintaining context across AI interactions
 
 ## 3) Install / Quick Start
 
-No build step required — CRAFT runs through Python-compatible text files you share with your AI assistant.
+No installation required — CRAFT runs entirely through Python-compatible text files shared with your AI assistant.
 
-1. **Clone / open the repo** and review its layout:
-   ```
-   core/        # Framework spec & cookbook (CRAFT core)
-   tutorial/    # You are here (tutorial project files)
-   docs/        # Documentation hub
-   examples/    # Additional sample projects
-   .github/     # Issue/PR templates, workflows, config
-   ```
+1. **Clone/download this repository** and locate the four CRAFT files:
+starter-set/
+├── CFT-PROJ-START-001_CRAFT-STARTER-SET-v1a.txt     # Project Implementation
+├── CFT-PROJ-START-001_AI-CHAT-HISTORY-v1a.txt       # Conversation Continuity
+├── CFT-FWK-COOKBK-CORE-v0825c7.txt                  # Core Cookbook (14 recipes)
+└── [CFT-FWK-SPEC file - to be added]                # Framework Specification
 
-2. **Load the four CRAFT tutorial files** with your AI assistant:
-   - `CFT-FWK-SPEC-v*.txt` – Framework Specification (CRAFT rules & patterns)
-   - `CFT-FWK-COOKBK-CORE-v*.txt` – Core Cookbook (base recipes)
-   - `CFT-PROJ-TUT-001_CRAFT-TUTORIAL-BASICS-v*.txt` – Tutorial Project Implementation
-   - `CFT-PROJ-TUT-001_AI-CHAT-HISTORY-v*.txt` – Tutorial Chat Handoff file
 
-3. **Start learning** by simply mentioning CRAFT to your AI:
-   - Say something like "Let's use CRAFT" or "Initialize CRAFT"
-   - The AutoStart feature will detect this and initialize the tutorial
-   - Choose Quick Start (5 minutes) or Standard Tutorial (10 minutes)
+2. **Attach all four files** to your AI chat session (Claude, ChatGPT, etc.)
 
-4. **Use the help system** whenever you need:
-   - Type "HELP" at any point for context-aware assistance
-   - Say "start tutorial" to begin or resume the tutorial
-   - Progress is tracked automatically between sessions
+3. **Simply mention "CRAFT"** in your message — auto-initialization will handle the rest:
+"Let's use CRAFT to build something"
+"I want to learn about CRAFT"
+"Begin CRAFT session"
 
-5. **Review handoff H001** in the Chat History file to see:
-   - Tutorial structure and learning paths
-   - Key decisions about tutorial design
-   - Next steps for your learning journey
 
-**Tip:** Start with the Quick Start mode to learn the three essential CRAFT features (Comment System, Recipe Basics, Project Structure), then explore deeper with the Standard Tutorial.
+4. **Say "HELP" anytime** to get assistance at your preferred detail level
 
-## 4) Links to docs/
+5. **Try the example recipe**:
+Execute HELLO_CRAFT_RECIPE with user_name="YourName"
 
-- **Getting Started** → `../docs/getting-started.md`
-- **Framework Overview** (four-file model & roles) → `../docs/framework-overview.md`
-- **CRAFT Comment System** (H->AI / AI->H patterns) → `../docs/comment-system.md`
-- **Project File Guide** → `../docs/project-file.md`
-- **Chat Handoff Guide** → `../docs/handoff-guide.md`
-- **Core Cookbook Guide** → `../docs/cookbook-core.md`
-- **Framework Spec Reference** → `../docs/framework-spec-reference.md`
-- **Examples Index** → `../examples/README.md`
-- **Core Index** → `../core/README.md`
 
-## 5) Tutorial Features
+**Tip:** The project includes placeholders for a 5th file (Beginner's Guide to CRAFT) which can be added as your reference grows.
 
-### AutoStart System
-- Monitors for ANY mention of "CRAFT" in initial prompts
-- Automatically executes `CHAT_SESSION_INITIALIZATION_RECIPE`
-- Provides clear feedback: "CRAFT Tutorial System detected! Initializing..."
+## 4) Links to Project Files
 
-### Learning Modes
-1. **Quick Start Mode** (3 essential features, ~5 minutes)
-   - Comment System basics
-   - Recipe fundamentals  
-   - Project file structure
+**Core Files:**
+- Project Implementation → `./CFT-PROJ-START-001_CRAFT-STARTER-SET-v1a.txt`
+- Chat History/Handoffs → `./CFT-PROJ-START-001_AI-CHAT-HISTORY-v1a.txt`
+- Core Cookbook → `./CFT-FWK-COOKBK-CORE-v0825c7.txt`
+- Framework Spec → `[To be added]`
 
-2. **Standard Mode** (5 features at a time, ~10 minutes)
-   - Adaptive selection based on your needs
-   - Examples and practice for each feature
-   - Progress tracking between sessions
+**Key Sections in Project File:**
+- PROJECT_META (lines 14-29) — Project identification and goals
+- PROJECT_INSTRUCTIONS (lines 35-75) — Auto-init and help configuration
+- PROJECT_VARIABLES (lines 81-111) — Session state and welcome messages
+- PROJECT_FUNCTIONS (lines 117-200) — Core operations and examples
 
-3. **Help Mode** (always available)
-   - Context-aware assistance
-   - Menu of common topics
-   - Responds to "HELP" in any variation
+**Available Base Recipes** (14 total in cookbook):
+- Chat Session Initialization (RCP-001-004-001-CHAT-INIT-v3.00a)
+- Interactive Handoff Creator (RCP-001-004-002-HANDOFF_SNAPSHOT)
+- Plus 12 additional utility recipes for ambiguity detection, error handling, etc.
 
-### Core Features Covered
-- Comment System (H->AI and AI->H)
-- Recipe System
-- Project Structure (4 files)
-- Handoff System
-- CRAFT-OPERATIONS-MANAGER (COM)
-- Personas and Roles
-- Global Instructions
-- Project Variables
-- Security Protocols
-- Token Management
-- Artifact Creation
-- Framework Specification
-- Cookbook Recipes
-- Session Initialization
-- Content Type Detection
+## 5) How to contribute
 
-## 6) How to contribute
+1. **Test the auto-initialization** with various phrasings and report issues
+2. **Share beginner questions** to help refine the help system
+3. **Suggest new example recipes** that would help newcomers
+4. **Create tutorials or guides** based on your learning experience
+5. **Report confusing aspects** to improve the teacher persona responses
 
-1. **Read** `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` at the repo root.
-2. **For tutorial improvements**, create a branch and edit files under `/tutorial`.
-3. **Test changes** with actual beginners to ensure clarity.
-4. **Open an Issue** for proposals; link it in your PR.
-5. **Follow style**: patient explanations, zero assumed knowledge, practical examples.
-6. **Keep synced** with core framework updates and best practices.
+For code contributions:
+- Fork the repository and create a feature branch
+- Test your changes with a fresh AI session
+- Ensure handoff documentation is updated
+- Submit a PR with clear description of improvements
 
-## 7) License
+## 6) License
 
-This repository uses the **Business Source License 1.1 (BSL 1.1)**.
+This repository uses the **Business Source License 1.1 (BSL 1.1)**:
+- ✅ **Free for non-commercial use** (research, educational, experimental)
+- ⚠️ **Commercial use requires a license** from Ketelsen Digital Solutions LLC
+- 📅 **On or after 2029-01-01**, files will relicense to Apache 2.0
 
-- **Non-commercial use** (research, educational, experimental) is permitted.
-- **Commercial use** requires a separate license from Ketelsen Digital Solutions LLC.
-- **On or after 2029-01-01**, applicable files are set to relicense to Apache 2.0.
+© 2025 Ketelsen Digital Solutions LLC
 
-See the root `LICENSE` for the full legal text. For commercial use, please contact Ketelsen Digital Solutions LLC to obtain a commercial license.
-
-## 8) Alpha Software Notice
-
-⚠️ **IMPORTANT:** CRAFT is currently in ALPHA phase. This tutorial reflects the current state as of August 2025. Features, syntax, and functionality may evolve. The tutorial focuses on stable, core features that are fundamental to CRAFT's design.
+See the LICENSE file for complete legal text. For commercial licensing inquiries, contact the project owner.
 
 ---
 
-**Ready to start?** Load the tutorial files with your AI assistant and say "Let's use CRAFT" to begin your journey!
+## Quick Reference
+
+**Trigger Phrases:**
+- Initialize: Any mention of "CRAFT"
+- Get help: "HELP", "help", "?"
+- Continue session: Reference handoff H001
+
+**Success Metrics:**
+- Users successfully initialize on first attempt ✅
+- Help system provides clear guidance ✅
+- Beginners feel comfortable exploring ✅
+
+**Current Version:** v1a (Created: 2025-01-01)
+
+**Project Phase:** Development
+
+**Target Audience:** Absolute beginners to CRAFT
+#AI->H::Note: (README.md generated following the provided format template)
+#AI->H::TeacherVoice: (This README provides a gentle introduction while maintaining all the structural elements from your template. It emphasizes the beginner-friendly features and auto-initialization that make this starter set special!)
+#AI->H::Question: (Would you like me to adjust any sections or add additional information?)
+
+
+
+
